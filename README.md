@@ -61,3 +61,6 @@ python3 trt_yolov3.py --usb --vid 0 --width 1280 --height 720   (or 640x480)
 ```
 python3 eval_yolov3.py --model yolov3-416 
 ```
+## 相关链接
+* https://github.com/jkjung-avt/tensorrt_demos#yolov3
+* https://github.com/Rapternmn/PyTorch-Onnx-Tensorrt
