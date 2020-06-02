@@ -8,6 +8,7 @@ Test yolov3-trt on jetson nano
 3. PyTorch
 4. Onnx 1.4.1
 5. Tensorrt
+6. Mkdir yolov3_onnx，yolov3-416.trt放在yolov3_onnx测试
 
 
 
