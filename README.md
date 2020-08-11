@@ -8,7 +8,7 @@ Test yolov3-trt on jetson nano
 3. PyTorch
 4. Onnx 1.4.1
 5. Tensorrt
-6. Mkdir yolov3_onnx，yolov3-416.trt放在yolov3_onnx测试
+6. Mkdir yolov3_onnx，得到的yolov3-416.trt放在yolov3_onnx测试
 
 
 
@@ -41,7 +41,8 @@ python3 create_onnx.py --reso 416
 ## Generating the Tensorrt File
 
 ```
-python3 create_trt_engine.py --onnx_file yolov3.onnx 
+python3 onnx_to_tensorrt.py --model yolov3-416
+ 
 ```
 Creating the Tensorrt engine takes some time. So have some patience.
 ## Test the YOLOv3 TensorRT engine with the "dog.jpg" image.(jetson nano run 2.55 FPS)
