@@ -391,7 +391,8 @@ class TrtYOLOv3(object):
     """TrtYOLOv3 class encapsulates things needed to run TRT YOLOv3."""
 
     def _load_engine(self):
-        TRTbin = 'yolov3_onnx/%s.trt' % self.model
+        #TRTbin = 'yolov3_onnx/%s.trt' % self.model
+        TRTbin = '%s.trt' % self.model
         with open(TRTbin, 'rb') as f, trt.Runtime(self.trt_logger) as runtime:
             return runtime.deserialize_cuda_engine(f.read())
 
