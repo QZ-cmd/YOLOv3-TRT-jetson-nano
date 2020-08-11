@@ -47,14 +47,14 @@ python3 onnx_to_tensorrt.py --model yolov3-416
  
 ```
 Creating the Tensorrt engine takes some time. So have some patience.
-## Test the YOLOv3 TensorRT engine with the "dog.jpg" image.(jetson nano run 2.55 FPS)
+## Test the YOLOv3 TensorRT engine with the "dog.jpg" image.(jetson nano run 2.55 FPS,jetson xavier nx run 11.59 FPS)
 
 ```
 python3 trt_yolov3.py --model yolov3-416
                         --image --filename ${HOME}/Pictures/dog.jpg
 ```
 
-## Run the "trt_yolov3.py" demo program.(jetson nano run 3.18 FPS)
+## Run the "trt_yolov3.py" demo program.(jetson nano run 3.18 FPS,jetson xavier nx run 13.01FPS)
 
 ```
 python3 trt_yolov3.py --usb --vid 0 --width 1280 --height 720   (or 640x480)
