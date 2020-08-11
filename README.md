@@ -16,7 +16,9 @@ Test yolov3-trt on jetson nano
 ```
 mkdir cfg
 cd cfg 
-wget https://raw.githubusercontent.com/pjreddie/darknet/f86901f6177dfc6116360a13cc06ab680e0c86b0/cfg/yolov3.cfg
+原链接失效百度网盘地址
+链接：https://pan.baidu.com/s/1CtWGfJQ2PWl6kLoMsH7Yhg 
+提取码：gm4v
 
 mkdir weights
 cd weights
